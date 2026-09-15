@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Hotel</title>
 </head>
-<body>
 
-    <h1>Trivago Hotel</h1>
-    <h2>Cadastro de Hotel</h2>
+<body style="text-align: center; background-color: #f4f6f9;">
 
-    <form action="salvar_hotel.php" method="post">
+    <h1 style="color: #0d6efd; background-color: #ffffff; width: 400px; margin: 0 auto;">Trivago Hotel</h1>
+    <h2 style="color: #495057; background-color: #ffffff; width: 400px; margin: 10px auto;">Cadastro de Hotel</h2>
 
-        <label for="nome_hotel">Nome do Hotel:</label>
+    <form action="salvar_hotel.php" method="post" style="border-radius: 15px; padding: 40px 20px; border: 2px solid #0d6efd; max-width: 400; margin: 0 auto; background-color: #ffffff; width: 600px; margin: 100px auto">
+
+        <label for="nome_hotel" style="color: #212529;">Nome do Hotel:</label>
+        <br>
         <input type="text" id="nome_hotel" name="nome_hotel">
-
-        <label for="cidade">Cidade:</label>
+        <br>
+        <label for="cidade" style="color: #212529;">Cidade:</label>
+        <br>
         <input type="text" id="cidade" name="cidade">
-
-        <label for="classificacao">Classificação em Estrelas (1 a 5):</label>
+        <br>
+        <label for="classificacao" style="color: #212529;">Classificação em Estrelas (1 a 5):</label>
+        <br>
         <input type="number" id="classificacao" name="classificacao" min="1" max="5">
+        <br>
 
-        <button type="submit">Enviar Cadastro</button>
+        <button type="submit" style="background-color: #0d6efd; color: #ffffff; border: none; padding: 8px 16px; border-radius: 5px;">Enviar Cadastro</button>
     </form>
 
-    <a href="salvar_hotel.php">Voltar à página principal/painel</a>
+    <a href="salvar_hotel.php" style="color: #0d6efd;">Voltar à página principal/painel</a>
 
 </body>
+
 </html>
